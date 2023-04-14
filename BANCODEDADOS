@@ -1,0 +1,43 @@
+package javaapplication3;
+import java.util.Arrays;
+
+public class bancodedados {
+    public static void main(String[] args) {
+        String matrizNOMES[][] = {{"Joao","1000","600"},
+            {"Fabiano","1500","700"},
+            {"Flávio","800","250"},
+            {"Soraya","2000","60"}};
+        int meta = 600;
+        
+        float salarioBJ = Float.parseFloat(matrizNOMES[0][1]);
+        float salarioBFa = Float.parseFloat(matrizNOMES[1][1]);
+        float salarioBFl = Float.parseFloat(matrizNOMES[2][1]);
+        float salarioBS = Float.parseFloat(matrizNOMES[3][1]);
+        
+        int vendasJ = Integer.parseInt(matrizNOMES[0][2]);
+        int vendasFab = Integer.parseInt(matrizNOMES[1][2]);
+        int vendasFla = Integer.parseInt(matrizNOMES[2][2]);
+        int vendasS = Integer.parseInt(matrizNOMES[3][2]);
+        
+        /*
+        for(int i = 0; i < matrizNOMES.length; i++){
+            for(int j = 0; j < matrizNOMES.length; j++){  
+                
+            }
+        }
+        */
+            System.out.println(Arrays.deepToString(matrizNOMES));
+        if(vendasJ > meta ){
+            double SBJ = salarioBJ * 1.10;
+        }
+        else if(vendasFab > meta){
+            double SBFB = salarioBFa * 1.10;
+        }
+        else if(vendasFla > meta){
+            double SBFL = salarioBFl * 1.10;
+        }
+        else if(vendasFab > meta){
+            double SBS = salarioBS * 1.10;
+        }
+    }
+}
