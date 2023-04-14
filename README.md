@@ -1,5 +1,6 @@
 # ProjetoA3
 package proja3;
+//usar while para fazer o random
 import java.util.Scanner;
 import java.util.Random;
 public class ProjA3 {
