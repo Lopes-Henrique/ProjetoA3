@@ -1,0 +1,26 @@
+
+package javaapplication4;
+
+public class matriz2p2 {
+    public static void main(String[] args) {
+       
+       int num = soraia();
+        System.out.println(soraia());
+        
+    }
+   
+    
+    public static int soraia(){
+       int num =(int) (Math.random()*10);
+       
+       if (num == 5){
+           soraiaBrava();
+       }
+       return num;
+    }
+    public static void soraiaBrava(){
+        System.out.println("Nao quero falar com vc");
+     
+    }
+    
+}
